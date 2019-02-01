@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".NuevoLibroActivity">
+    <TextView
+        android:id="@+id/db_nuevo_title"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/db_nuevo_title"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/db_nuevo_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_nuevo_title"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/db_nuevo_titulo" />
+
+        <EditText
+            android:id="@+id/db_nuevo_tf_titulo"
+            android:layout_weight="16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/db_nuevo_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_nuevo_titulo"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/db_nuevo_autor" />
+
+        <EditText
+            android:id="@+id/db_nuevo_tf_autor"
+            android:layout_weight="16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/db_nuevo_isbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_nuevo_autor"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/db_nuevo_isbn" />
+
+        <EditText
+            android:id="@+id/db_nuevo_tf_isbn"
+            android:layout_weight="16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/db_nuevo_editorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_nuevo_isbn"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/db_nuevo_editorial" />
+
+        <EditText
+            android:id="@+id/db_nuevo_tf_editorial"
+            android:layout_weight="16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/db_nuevo_pag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/db_nuevo_editorial"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/db_nuevo_num_pag" />
+
+        <EditText
+            android:id="@+id/db_nuevo_tf_pag"
+            android:layout_weight="10"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/db_nuevo_leido"
+            android:text="@string/db_nuevo_checkbox"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/db_nuevo_pag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="3"
+            android:text="@string/db_nuevo_btn_insertar"
+            android:layout_width="wrap_content"
+            android:onClick="guardar"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="3"
+            android:text="@string/db_nuevo_btn_cancelar"
+            android:layout_width="wrap_content"
+            android:onClick="clear"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:minWidth="150dp"
+        android:onClick="volver"
+        android:text="@string/btn_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".LibroInfoActivity">
+    <TextView
+        android:text="@string/libro_info_title"
+        android:textSize="27dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/libro_info_titulo"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="23dp"
+        android:id="@+id/libro_info_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="23dp"
+        android:id="@+id/libro_info_isbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="23dp"
+        android:id="@+id/libro_info_editorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:textSize="23dp"
+           android:layout_weight="2"
+           android:id="@+id/libro_info_pag"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_weight="2"
+           android:textSize="23dp"
+           android:id="@+id/libro_info_leido"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/libro_info_btn_eliminar"
+            android:layout_width="wrap_content"
+            android:onClick="eliminar"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/db_nuevo_btn_cancelar"
+            android:layout_width="wrap_content"
+            android:onClick="volver"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

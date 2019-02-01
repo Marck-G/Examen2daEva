@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Examen2daEva</string>
+    <string name="main_title">-- MENU PRINCIPAL --</string>
+    <string name="main_btn1">BASE DE DATOS</string>
+    <string name="main_btn2">MULTIMEDIA</string>
+    <string name="main_btn_salir">SALIR</string>
+    <string name="bd_menu_title">Mi Base de Datos de Libros</string>
+    <string name="db_menu_btn_new">nuevo libro</string>
+    <string name="db_menu_btn_listado">Listado Libros</string>
+    <string name="db_menu_btn_buscar">buscar libro(s)</string>
+    <string name="db_nuevo_titulo">TITULO</string>
+    <string name="db_nuevo_title">DATOS NUEVO LIBRO</string>
+    <string name="db_nuevo_autor">AUTOR</string>
+    <string name="db_nuevo_isbn">ISBN</string>
+    <string name="db_nuevo_editorial">EDITORIAL</string>
+    <string name="db_nuevo_checkbox">Leído</string>
+    <string name="db_nuevo_btn_insertar">Insertar</string>
+    <string name="db_nuevo_btn_cancelar">Cancelar</string>
+    <string name="btn_volver">Volver</string>
+    <string name="db_nuevo_num_pag">NUM. PÁGINAS</string>
+    <string name="bd_listado_title">Listado de libros</string>
+    <string name="db_listado_rb_leidos">Leídos</string>
+    <string name="db_listado_rb_no_leidos">No Leídos</string>
+    <string name="db_listado_todos">Todos los libros</string>
+    <string name="libro_info_title">INFORMACIÓN DETALLADA DEL LIBRO</string>
+    <string name="libro_info_btn_eliminar">Eliminar</string>
+    <string name="libro_info_pag_sufij">Páginas</string>
+    <string name="libro_info_leido_true">Libro LEIDO</string>
+    <string name="libro_info_leido_false">Libro NO LEIDO</string>
+    <string name="db_buscar_rb_titulo">TITULO</string>
+    <string name="db_buscar_rb_autor">AUTOR</string>
+    <string name="db_buscar_rb_editorial">EDITORIAL</string>
+    <string name="db_buscar_title">Buscar Libros</string>
+    <string name="db_buscar_info">Marca la opción por la que quieres buscar</string>
+    <string name="db_buscar_btn_buscar">Buscar</string>
+</resources>

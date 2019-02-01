@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".BaseDatosMenuActivity">
+
+    <TextView
+        android:id="@+id/db_menu_title"
+        android:text="@string/bd_menu_title"
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/db_menu_title"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:minWidth="200dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/db_menu_btn_new"
+            android:layout_width="match_parent"
+            android:onClick="nuevo"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="@string/db_menu_btn_listado"
+            android:layout_width="match_parent"
+            android:onClick="listado"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="@string/db_menu_btn_buscar"
+            android:onClick="buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:minWidth="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/main_btn_salir"
+        android:layout_width="wrap_content"
+        android:onClick="salir"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

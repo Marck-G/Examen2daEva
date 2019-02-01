@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="match_parent"
+    tools:context=".ListarLibrosActivity">
+    <TextView
+        android:id="@+id/bd_listado_title"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="@string/bd_listado_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@id/bd_listado_title"
+        android:id="@+id/db_listado_op"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/db_listado_rb_leido"
+                android:text="@string/db_listado_rb_leidos"
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/db_listado_rb_no_leido"
+                android:text="@string/db_listado_rb_no_leidos"
+                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/db_listado_rb_todos"
+                android:text="@string/db_listado_todos"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/db_listado_op"
+        android:id="@+id/db_listado_lista"
+        android:layout_above="@id/db_listado_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/db_listado_volver"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/btn_volver"
+        android:onClick="back"
+        android:minWidth="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
